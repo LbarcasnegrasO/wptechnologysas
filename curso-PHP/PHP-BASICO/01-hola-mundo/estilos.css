@@ -1,0 +1,12 @@
+#tabla{
+	height: 100px;
+} 
+tr{
+	cursor: pointer;
+	transition: all .25s ease-in-out;
+}
+.selected {
+	background-color: red;
+	font-weight: bold;
+	color: #fff;
+}

@@ -1,0 +1,25 @@
+.ir-arriba {
+    width: 60px;
+    height: 60px;
+    background: #ffc221;
+    display: none;
+    padding: 10px 17px;
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 35px;
+    justify-content: center;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .ir-arriba{
+     width: 40px;
+     height: 40px;
+     padding: 1px 7px;
+    }
+}
