@@ -26,14 +26,14 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
                     printf('<button class="btn" data-filter=".%s">%s</button>', $brand, $brand);
                 }, $unique);
             ?>
-        </div>
+        </div> 
 
         <div class="grid">
             <?php array_map(function ($item) use($in_cart){ ?>
             <div class="grid-item border <?php echo $item['item_brand'] ?? "Brand" ; ?>">
                 <div class="item py-2" style="width: 200px;">
                     <div class="product font-rale">
-                        <a href="<?php printf('%s?item_id=%s', 'product.php',  $item['item_id']); ?>"><img src="<?php echo $item['item_image'] ?? "./assets/products/13.png"; ?>" alt="product1" class="img-fluid"></a>
+                        <a href="<?php printf('%s?item_id=%s', 'product.php',  $item['item_id']); ?>"><img src="<?php echo $item['item_image'] ?? "./assets/products/13.png"; ?>" alt="product1" class="img-fluid" style="width:260px;height:230px;"></a>
                         <div class="text-center">
                             <h6><?php echo $item['item_name'] ?? "Unknown"; ?></h6>
                             <div class="rating text-warning font-size-12">

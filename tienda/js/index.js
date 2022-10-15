@@ -121,7 +121,7 @@ $(document).ready(function(){
 
                 if($input.val() > 1 && $input.val() <= 10){
                     $input.val(function(i, oldval){
-                        return --oldval;
+                        return --oldval; 
                     });
 
 
